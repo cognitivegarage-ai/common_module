@@ -2,6 +2,9 @@ import { Main } from './main';
 
 export default class Library extends Main {
   constructor() {
-    super(window.fetch.bind(window));
+    super();
+  }
+  name(){
+    return "Browser: "+ this.getMyName();
   }
 }

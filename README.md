@@ -83,6 +83,10 @@ No value for the properties `main`, `types` or `files` was specified in `package
 The library must be imported
 
 ```
+require("library/dist/node");
+```
+
+<!-- ```
 const Library = require("library/node");
 ```
 
@@ -94,4 +98,4 @@ Where `browser` and `node` match the exact file name that will be created `brows
 
 By default, these files are exported in the `dist` folder and the root of the module will be `./`. Therefore to import them, the following syntax is required `require("library/dist/node");`. To remove the need to specifying `/dist/` the `npm run expose` command is used which will unwrap the folder `dist` in the root folder.
 
-To eliminate the need to manually delete files after publishing the package, these commands can be run in an ephemeral volume, such as a CI / CD pipe, or can be added manually in `.gitignore`
+To eliminate the need to manually delete files after publishing the package, these commands can be run in an ephemeral volume, such as a CI / CD pipe, or can be added manually in `.gitignore` -->

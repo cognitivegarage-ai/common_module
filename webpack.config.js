@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
+const pkg = require("./package.json")
 
 const generalConfig = {
   watchOptions: {
@@ -35,7 +36,7 @@ const nodeConfig = {
     path: path.resolve(__dirname, './dist'),
     filename: 'node.js',
     libraryTarget: 'umd',
-    libraryExport: 'default',
+    // libraryExport: 'default',
   },
 };
 
@@ -47,9 +48,9 @@ const browserConfig = {
     filename: 'browser.js',
     libraryTarget: 'umd',
     globalObject: 'this',
-    libraryExport: 'default',
+    // libraryExport: 'default',
     umdNamedDefine: true,
-    library: 'MyLibrary',
+    library: pkg.name,
   },
 };
 
