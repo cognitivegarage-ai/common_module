@@ -1,5 +1,5 @@
 import { Main } from './main';
-export default class Library extends Main {
+export declare class Library extends Main {
     constructor();
     name(): string;
 }

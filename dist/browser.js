@@ -20,7 +20,7 @@ return /******/ (() => { // webpackBootstrap
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => /* binding */ Library
+/* harmony export */   "Library": () => /* binding */ Library
 /* harmony export */ });
 /* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ "./src/main.ts");
 

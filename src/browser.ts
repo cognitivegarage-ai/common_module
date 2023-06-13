@@ -1,6 +1,6 @@
 import { Main } from './main';
 
-export default class Library extends Main {
+export class Library extends Main {
   constructor() {
     super();
   }
